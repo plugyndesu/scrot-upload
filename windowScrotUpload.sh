@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #scrot-upload screenshots current window, uploads it to a pomf clone, and opens link in a browser
 #    Copyright (C) 2016 plugyn
 
@@ -13,9 +15,7 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------
 
-#!/bin/sh
-
 scrot -u /tmp/uploadedPicture.png
 limf -c 13 /tmp/uploadedPicture.png -l --log
-URL="$(tac /home/plugyn/limf.log | egrep -o 'https?://[^ ]+' -m 1)"
+URL="$(tac $HOME/limf.log | egrep -o 'https?://[^ ]+' -m 1)"
 firefox $URL
