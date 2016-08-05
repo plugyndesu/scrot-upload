@@ -4,7 +4,7 @@ Scrots current window, uploads to a pomf clone, and opens it in firefox
 
 Requirements:
     limf -- $ sudo pip install limf
-    scrot -- in your repo
+    maim -- in your repo
     a browser
     
     
