@@ -15,7 +15,7 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------
 
-scrot -u /tmp/uploadedPicture.png
+maim -s /tmp/uploadedPicture.png
 limf -c 13 /tmp/uploadedPicture.png -l --log
 URL="$(tac $HOME/limf.log | egrep -o 'https?://[^ ]+' -m 1)"
 firefox $URL
