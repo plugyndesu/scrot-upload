@@ -1,0 +1,10 @@
+Quick script to use as a keybind
+
+Scrots current window, uploads to a pomf clone, and opens it in firefox
+
+Requirements:
+    limf -- $ sudo pip install limf
+    scrot -- in your repo
+    a browser
+    
+    
